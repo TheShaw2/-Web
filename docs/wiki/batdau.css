@@ -1,0 +1,89 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nền trang */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #8ed0f0, #c8e6f7);
+  background-image: url("https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png");
+  background-size: cover;        
+  background-position: center;  
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
+  margin: 0;
+  padding: 0;
+}
+
+/* Khung tiêu đề */
+header {
+  width: 90%;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Tiêu đề */
+h3 {
+  text-align: center;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.batdau {
+  text-align: center;
+}
+
+.header-container {
+  text-align: center;
+}
+
+/* Ảnh trong bảng */
+img {
+  border-radius: 10px;
+}
+
+/* Bảng chính */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  background-color: #f9fcff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+table, th, td {
+  border: 1px solid #a6d3a0;
+}
+
+th {
+  background-color: #2e8b57;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* 🔹 Ảnh bản đồ phóng to */
+td:nth-child(2) img {
+  width: 300px;  /* bạn có thể chỉnh 350 hoặc 400 nếu muốn to hơn */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+/* 🔹 Hiệu ứng khi rê chuột */
+td:nth-child(2) img:hover {
+  transform: scale(1.08);
+}
